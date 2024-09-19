@@ -1,4 +1,5 @@
 # Nanhe Kadam Society NGO Website Development Report
+A website for the Nanhe Kadam NGO that I am making for my College Web Programming Mini Project
 
 ## Table of Contents
 
