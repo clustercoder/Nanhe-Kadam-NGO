@@ -159,3 +159,67 @@ A key breakpoint is set at 768px, where significant layout changes occur.
 The Nanhe Kadam Society NGO website provides a solid foundation for the organization's online presence. It effectively communicates the NGO's mission, facilitates user engagement through volunteering and donations, and provides essential information to visitors. The responsive design ensures accessibility across various devices, while the consistent styling maintains a professional and cohesive look throughout the site.
 
 By implementing the suggested future enhancements, the website can further improve its functionality and user engagement, ultimately supporting the NGO's noble cause of empowering children orphaned due to COVID-19.
+
+```mermaid
+graph TD
+    A["Home Page"]
+    B["About Page"]
+    C["Volunteer Page"]
+    D["Donate Page"]
+    E["Location Page"]
+    F["Contact Page"]
+    G["Newsletter Signup"]
+    H["Volunteer Form"]
+    I["Donation Form"]
+    J["Visit Scheduling Form"]
+    K["Contact Form"]
+
+    A -->|"About" link| B
+    A -->|"Volunteer" link| C
+    A -->|"Donate" link| D
+    A -->|"Location" link| E
+    A -->|"Contact" link| F
+    A -->|"Subscribe" button| G
+
+    B -->|"Home" link| A
+    B -->|"Volunteer" link| C
+    B -->|"Donate" link| D
+    B -->|"Location" link| E
+    B -->|"Contact" link| F
+
+    C -->|"Home" link| A
+    C -->|"About" link| B
+    C -->|"Donate" link| D
+    C -->|"Location" link| E
+    C -->|"Contact" link| F
+    C -->|"Sign Up" button| H
+
+    D -->|"Home" link| A
+    D -->|"About" link| B
+    D -->|"Volunteer" link| C
+    D -->|"Location" link| E
+    D -->|"Contact" link| F
+    D -->|"Donate" button| I
+
+    E -->|"Home" link| A
+    E -->|"About" link| B
+    E -->|"Volunteer" link| C
+    E -->|"Donate" link| D
+    E -->|"Contact" link| F
+    E -->|"Schedule Visit" button| J
+
+    F -->|"Home" link| A
+    F -->|"About" link| B
+    F -->|"Volunteer" link| C
+    F -->|"Donate" link| D
+    F -->|"Location" link| E
+    F -->|"Send" button| K
+
+    G -->|"Confirmation"| A
+    H -->|"Confirmation"| C
+    I -->|"Confirmation"| D
+    J -->|"Confirmation"| E
+    K -->|"Confirmation"| F
+```
+
+
