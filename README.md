@@ -288,6 +288,7 @@ erDiagram
         string reason
         date submitted_date
     }
+```
 
     USER ||--o{ VOLUNTEER : "can_be"
     USER ||--o{ DONOR : "can_be"
