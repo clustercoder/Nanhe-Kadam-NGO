@@ -223,3 +223,75 @@ graph TD
 ```
 
 
+```mermaid
+erDiagram
+    USER {
+        int user_id PK
+        string name
+        string email
+        string password
+        date created_at
+    }
+    VOLUNTEER {
+        int volunteer_id PK
+        int user_id FK
+        string phone
+        string area_of_interest
+        date joined_date
+    }
+    DONOR {
+        int donor_id PK
+        int user_id FK
+        string phone
+        decimal total_donated
+        date last_donation_date
+    }
+    DONATION {
+        int donation_id PK
+        int donor_id FK
+        decimal amount
+        date donation_date
+        string payment_method
+    }
+    NEWSLETTER_SUBSCRIBER {
+        int subscriber_id PK
+        string email
+        date subscribed_date
+    }
+    EVENT {
+        int event_id PK
+        string title
+        string description
+        date event_date
+        string location
+    }
+    BLOG_POST {
+        int post_id PK
+        int author_id FK
+        string title
+        string content
+        date published_date
+    }
+    CONTACT_INQUIRY {
+        int inquiry_id PK
+        string name
+        string email
+        string subject
+        string message
+        date submitted_date
+    }
+    VISIT_REQUEST {
+        int request_id PK
+        string name
+        string email
+        date preferred_date
+        string reason
+        date submitted_date
+    }
+
+    USER ||--o{ VOLUNTEER : "can_be"
+    USER ||--o{ DONOR : "can_be"
+    DONOR ||--o{ DONATION : "makes"
+    USER ||--o{ BLOG_POST : "writes"
+    VOLUNTEER ||--o{ EVENT : "participates_in"
+    EVENT }o--o{ VOLUNTEER : "has_participants"```
